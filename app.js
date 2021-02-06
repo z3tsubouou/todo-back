@@ -11,4 +11,4 @@ const userRoute = require("./routes/UserRoutes");
 
 app.use("/user", userRoute);
 
-app.listen(8000, () => console.log("server running on 8000"));
+app.listen(8000, () => console.log("server running on: 8000"));
