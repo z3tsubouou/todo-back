@@ -37,7 +37,6 @@ module.exports = {
     },
     checkUserToken: (req, res, next) => {
         let token = req.get("Authorization");
-        console.log(token);
 
         if (token) {
             token = token.slice(7);
