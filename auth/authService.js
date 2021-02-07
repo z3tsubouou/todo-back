@@ -21,7 +21,6 @@ module.exports = {
 
                     User.findOne({ _id: data._id }, usersProjection)
                         .then((user) => {
-                            console.log(user);
                             return callback(null, {
                                 admin: user.admin,
                             });
