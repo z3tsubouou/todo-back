@@ -3,7 +3,13 @@ const app = express();
 const cors = require("cors");
 require("dotenv/config");
 
-app.use(cors({ origin: "https://fronttodolistapp.herokuapp.com" }));
+app.use(
+    cors({
+        origin:
+            "https://fronttodolistapp.herokuapp.com" ||
+            "http://fronttodolistapp.herokuapp.com",
+    }),
+);
 app.use(express.json());
 
 //routes
