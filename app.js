@@ -15,5 +15,5 @@ app.use("/", (req, res) => {
 app.use("/user", userRoute);
 
 app.listen(process.env.PORT || 8000, () =>
-    console.log(`server running on: ${process.env.PORT}),
+    console.log(`server running on: ${process.env.PORT || 8000}`),
 );
